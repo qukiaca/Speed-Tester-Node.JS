@@ -69,7 +69,7 @@ async function main() {
             const speedMbps = (bytes * 8) / (ms * 1000);
 
             console.log(
-                `${(bytes / 1024).toFixed(1)} KB | ` +
+                `${(bytes / 1024).toFixed(1)} KiB | ` +
                 `${ms.toFixed(0)} ms | ` +
                 `${speedMbps.toFixed(2)} Mbps`
             );
@@ -91,7 +91,7 @@ async function main() {
 
     console.log('\nРезультаты:');
     console.log(`Успешных запросов: ${successfulRequests}/${REQUESTS_COUNT}`);
-    console.log(`Общий объём:       ${(totalBytes / 1024 / 1024).toFixed(2)} MB`);
+    console.log(`Общий объём:       ${(totalBytes / 1024 / 1024).toFixed(2)} MiB`);
     console.log(`Среднее время:     ${avgTime.toFixed(0)} ms`);
     console.log(`Средняя скорость:  ${avgSpeed.toFixed(2)} Mbps`);
 }
